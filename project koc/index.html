@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> KOC </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+   <center> 
+    <body>
+             <img src="./images/koclogo.png" width="400" height="400">
+    
+<div class="form">
+  <!-- <input type="text" name=""placeholder="name here"> -->
+    <input type="password" name="" placeholder=" Enter the password" id="pass" value="">
+        <input type="checkbox" onclick="myfunction()" placeholder="  show password">
+    <input type="submit" name="" value="ENTER" onclick="validate()">
+</div>
+<div>
+<p id="length"></p>
+</div>
+
+<script>
+
+function myfunction(){
+    var x = document.getElementById("pass");
+
+    if(x.type === "password"){
+    x.type = "text";
+}
+else{
+    x.type = "password";
+}
+}
+
+function validate(){
+var password = document.getElementById("pass");
+var length = document.getElementById("length");
+
+if(password.value.length == 1){ 
+    // alert("login succesfull");
+    window.location.replace("index2.html")
+    return false;
+}
+else{
+alert("wrong password");
+}
+}
+</script>
+    </body>
+
+</center>
+
+</html>
