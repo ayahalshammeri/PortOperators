@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> KOC </title>
+    <title> Port Operations </title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="logo"><img src="./images/logo.png" width="185" height="80"></div>
+    <div class="logo"><img src="./images/newlogo.png" width="310" height="300"></div>
 
     <style>
         .logo {
-            margin-right: 700pc;
-            background: #ffffff16;
-
+            margin-inline: 20%;
+            /* background: #ffffff16; */
         }
     </style>
-
     <div class="form">
         <input type="password" name="" placeholder=" Enter the password" id="pass" value="">
         <input type="checkbox" onclick="myfunction()" placeholder="show password">
@@ -27,7 +25,7 @@
     </div>
 
     <div>
-     <p id="length"></p>
+        <p id="length"></p>
     </div>
 
     <script>
@@ -46,7 +44,7 @@
             var password = document.getElementById("pass");
             var length = document.getElementById("length");
 
-            if (password.value == 1) {
+            if (password.value == 5) {
                 // alert("login succesfull");
                 window.location.replace("index2.html")
                 return false;
